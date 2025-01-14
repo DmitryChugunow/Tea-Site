@@ -1,0 +1,68 @@
+.intro {
+    background-image: url(../images/intro.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.intro > div {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro h2 {
+    max-width: 790px;
+    padding-top: 250px;
+    margin-bottom: 20px;
+    font-family: "Cormorant", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: left;
+}
+
+.intro p {
+    max-width: 558px;
+    padding-bottom: 50px;
+    font-family: "Cormorant", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.06px;
+    text-align: left;
+}
+
+@media (max-width: 1600px) {
+    .intro {
+        background-position: left;
+        background-size: none;
+    }
+}
+
+@media (max-width: 1240px) {
+    .intro > div {
+        margin: 0;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 660px) {
+    .intro h2 {
+        font-size: 40px;
+        line-height: 48.44px;
+    }
+}
+
+@media (max-width: 485px) {
+    .intro h2 {
+        font-size: 24px;
+        line-height: 29.06px;
+    }
+
+    .intro p {
+        padding-bottom: 30px;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 17.7px;
+    }
+}

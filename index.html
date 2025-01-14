@@ -1,14 +1,46 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>TeaLuxe</title>
 </head>
 <body>
     <header>
         <nav>
+            <div class="burger">
+                <input id="menu_toggle" type="checkbox">
+                <label class="menu_btn" for="menu_toggle">
+                    <span></span>
+                </label>
+                <div class="menu_box">
+                    <div>
+                        <input id="menu_toggle_off" type="checkbox">
+                        <label  abel class="menu_btn_off" for="menu_toggle">
+                            <span></span>
+                        </label>
+                        <ul id="menu_list">
+                            <li><a href="#" class="menu_item">Black</a></li>
+                            <li><a href="#" class="menu_item">Green</a></li>
+                            <li><a href="#" class="menu_item">White</a></li>
+                            <li><a href="#" class="menu_item">Oolong</a></li>
+                            <li><a href="#" class="menu_item">Pu-erh</a></li>
+                        </ul>
+                        <span id="burger_line"></span>
+                        <ul id="other_list">
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">Our Blog</a></li>
+                            <li><a href="">Shipping and Delivery</a></li>
+                        </ul>
+                        <div class="burger_footer">
+                            <img src="./icons/cart.svg" alt="корзина">
+                            <img src="./icons/account.svg" alt="аккаунт">
+                            <img src="./icons/search.svg" alt="поиск">
+                        </div>
+                    </div>
+                </div>
+            </div>
             <img src="./icons/logo.svg" alt="логотип" id="logo_head">
             <ul class="navHead">
                 <li><a href="">Black</a></li>
@@ -25,17 +57,224 @@
                 <img src="./icons/search.svg" alt="поиск" id="imgHeader">
             </div>
         </nav>
-        <div class="intro">
-            <div class="null"></div>
-            <h2>A cup of tea is a moment of calm in the chaos of life</h2>
-            <p>Wide selection of high-quality teas from all over the world, carefully curated by tea experts.</p>
-        </div>
     </header>
     <main>
-
+        <section class="intro">
+            <div>
+                <h2>A cup of tea is a moment of calm in the chaos of life</h2>
+                <p>Wide selection of high-quality teas from all over the world, carefully curated by tea experts.</p>
+            </div>
+        </section>
+        <p class="quote">"Tea is not just a drink, it's a way of life and a way to connect with our loved ones."</p>
+        <section class="collections">
+            <h2>Explore our Collections</h2>
+            <div class="collect">
+                <div class="item_coll">
+                    <img src="./images/black_tea.jpg" alt="Black tea">
+                    <p>Black</p>
+                </div>
+                <div class="item_coll">
+                    <img src="./images/green_tea.jpg" alt="Green tea">
+                    <p>Green</p>
+                </div>
+                <div class="item_coll">
+                    <img src="./images/white_tea.jpg" alt="White tea">
+                    <p>White</p>
+                </div>
+                <div class="item_coll">
+                    <img src="./images/oolong_tea.jpg" alt="Oolong tea">
+                    <p>Oolong</p>
+                </div>
+                <div class="item_coll">
+                    <img src="./images/pu-erh_tea.jpg" alt="Pu-erh tea">
+                    <p>Pu-erh</p>
+                </div>
+            </div>
+        </section>
+        <section class="comments">
+            <h2>What our Clients say</h2>
+            <div>
+                <div class="comm_item">
+                    <p class="comment">"As a tea enthusiast, I have tried teas from all over the world, but this tea store truly stands out. Their teas are of the highest quality and the variety is impressive. This is definitely a tea store that every tea lover should visit."</p>
+                    <p class="author">Alice</p>
+                </div>
+                <div class="comm_item">
+                    <p class="comment">"This tea store is my go-to for all my tea needs. Their selection is unbeatable and the quality of their teas is exceptional."</p>
+                    <p class="author">Mad-Hatter</p>
+                </div>
+                <div class="comm_item" id="comm_vis">
+                    <p class="comment">"If you're a tea lover, you must visit this tea store. The selection is vast and the quality is outstanding. I guarantee you won't be disappointed."</p>
+                    <p class="author">Dormouse</p>
+                </div>
+                <div class="comm_item" id="comm_vis">
+                    <p class="comment">"I am not a big tea drinker, but this tea store has converted me. I highly recommend this tea store to anyone looking for a high-quality tea experience."</p>
+                    <p class="author">March Hare</p>
+                </div>
+            </div>
+        </section>
+        <section class="blog">
+            <h2>Our Tea Blog</h2>
+            <div id="blog">
+                <article class="blog_left">
+                    <img src="./images/blog_01.jpg" alt="blog by Robinson Crusoe">
+                    <div class="blog_item">
+                        <h3>Tea Time Travels: Funny Moments from Around the World</h3>
+                        <div>
+                            <p>by Robinson Crusoe</p>
+                            <a href="#">Read</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog_right">
+                    <img src="./images/blog_02.jpg" alt="blog by Joker">
+                    <div class="blog_item">
+                        <h3>The Role of Tea in Mental Health
+                        </h3>
+                        <div>
+                            <p>by Joker</p>
+                            <a href="#">Read</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog_left" id="blog_vis">
+                    <img src="./images/blog_03.jpg" alt="blog by Casper the Friendly Ghost">
+                    <div class="blog_item">
+                        <h3>Tea-rific Tales: Hilarious Stories from Tea Lovers</h3>
+                        <div>
+                            <p>by Casper the Friendly Ghost</p>
+                            <a href="#">Read</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog_right" id="blog_vis">
+                    <img src="./images/blog_04.jpg" alt="blog by Author Authorius">
+                    <div class="blog_item">
+                        <h3>Tea and Caffeine: Effects on the Brain and Behavior</h3>
+                        <div>
+                            <p>by Author Authorius</p>
+                            <a href="#">Read</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <button>View all</button>
+        </section>
+        <section class="feedback">
+            <div>
+                <h3>Want to know more?</h3>
+                <div>
+                    <p id="feed_text">Join our mailing list and stay up-to-date with the latest news, promotions, and exclusive offers from our tea store. Be the first to know about new tea arrivals, seasonal blends, and special discounts. Don't miss out on the tea-rrific perks - sign up today!</p>
+                    <div>
+                        <form>
+                            <div id="mail">
+                                <input type="email" placeholder="  name@email.com">
+                                <button>Join</button>
+                            </div>
+                            <div id="check">
+                                <input type="checkbox" id="cb" hidden>
+                                <label for="cb" class="custom-cb"></label>
+                                <p>We take your privacy seriously and are committed to protecting your personal information. By subscribing to our mailing list, you are consenting to receive periodic emails from us about our products, promotions, and other tea-related information.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="prioritise">
+            <h2>We Prioritise</h2>
+            <div id="prioritise">
+                <div id="prior_item">
+                    <h3>Single garden teas</h3>
+                    <p>Complete transparency</p>
+                    <img src="./icons/Vector01.svg" alt="Single garden teas icon">
+                </div>
+                <div id="prior_item">
+                    <h3>Only Loose leaf tea</h3>
+                    <p>Best Drinking Experience</p>
+                    <img src="./icons/Vector02.svg" alt="Only Loose leaf tea icon">
+                </div>
+                <div id="prior_item">
+                    <h3>Customer support</h3>
+                    <p>No bots, no automated replies</p>
+                    <img src="./icons/Vector03.svg" alt="Customer support icon">
+                </div>
+                <div id="prior_item">
+                    <h3>Fast shipping</h3>
+                    <p>Save, Convenient, Reliable</p>
+                    <img src="./icons/Vector04.svg" alt="Fast shipping icon">
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-
+        <div class="footer_list">
+            <div id="prod_list">
+                <h3>Products</h3>
+                <ul>
+                    <li><a href="#">Black tea</a></li>
+                    <li><a href="#">Green tea</a></li>
+                    <li><a href="#">White tea</a></li>
+                    <li><a href="#">Oolong tea</a></li>
+                    <li><a href="#">Pu-erh tea</a></li>
+                </ul>
+            </div>
+            <div id="comp_list">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Our Blog</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping & Delivery</a></li>
+                    <li><a href="#">Refund policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div id="stay">
+                <div id="dragomir">
+                    <p id="drag_text">“Tea is a journey. It can take you to new places and open your mind to new experiences. Let every sip transport you to a world of wonder and possibility”</p>
+                    <p id="drag_author">Dragomir Teodorescu, Tealuxe owner</p>
+                </div>
+                <div id="stay_H">
+                    <h3>Stay In Touch</h3>
+                    <p>Please feel free to contact us via the email of phone. We would be happy to hear from you!</p>
+                    <div class="foot_log">
+                        <img src="./icons/logo.svg" alt="logo">
+                        <div>
+                            <div>
+                                <img src="./icons/icon_tel.svg" alt="telephone">
+                                <a href="tel:+370680123457">+370 680 123457</a>
+                            </div>
+                            <div>
+                                <img src="./icons/icon_post.svg" alt="email">
+                                <a href="mailto:info@tealuxe.com">info@tealuxe.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="icon_soc">
+                        <img src="./icons/icon_facebook.svg" alt="facebook">
+                        <img src="./icons/icon_youtube.svg" alt="youtube">
+                        <img src="./icons/icon_instagram.svg" alt="instagram">
+                        <img src="./icons/icon_twiter.svg" alt="twiter">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <div>
+                <p>© Tealuxe, 2023</p>
+                <div>
+                    <img src="./icons/icon_mastercard.png" alt="mastercard"
+                    width="26px" height="20px">
+                    <img src="./icons/icon_visa.svg" alt="visa"
+                    width="31px" height="10px">
+                    <img src="./icons/icon_google-pay.png" alt="google-pay"
+                    width="29px" height="12px">
+                    <img src="./icons/icon_paypal.png" alt="paypal"
+                    width="10px" height="12px">
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

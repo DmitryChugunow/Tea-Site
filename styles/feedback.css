@@ -1,0 +1,174 @@
+.feedback {
+    background-color: #F7F2EA;
+    background-image: url(../images/tea_1.png);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.feedback > div {
+    max-width: 1200px;
+    padding: 100px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback > div > div {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.feedback h3 {
+    font-family: "Cormorant", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48.44px;
+    text-align: left;
+}
+
+.feedback p {
+    max-width: 580px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: left;
+}
+
+#mail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#mail input {
+    border-bottom: 1px solid #B8B58B;
+    width: 440px;
+    font-family: "Open Sans",sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+#mail input::placeholder {
+    color: #B8B58B;
+}
+
+#mail button {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 27.24px;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    padding: 12px 41px;
+}
+
+#check {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+#check p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 17.7px;
+    text-align: left;
+}
+
+.custom-cb {
+    display: inline-block;
+    width: 23px;
+    height: 10px;
+    background: white;
+    border: 1px solid #151618;
+    font-size: 0;
+}
+
+@media (max-width: 1240px) {
+    .feedback > div {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 1210px) {
+    .feedback > div {
+        padding: 60px 0;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .feedback > div > div {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .feedback p {
+        max-width: 800px;
+        text-align: center;
+    }
+
+    form {
+        max-width: 580px;
+    }
+}
+
+@media (max-width: 900px) {
+    #feed_text {
+        margin: 0 60px;
+    }
+}
+
+@media (max-width: 700px) {
+    #feed_text {
+        max-width: 600px;
+        margin: 0 10px;
+    }
+
+    form {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    #mail input {
+        width: 350px;
+    }
+
+    .feedback p {
+        font-size: 13px;
+        line-height: 17.7px;
+    }
+}
+
+@media (max-width: 500px) {
+    #mail input {
+        width: 250px;
+    }
+
+    .feedback h3 {
+        font-size: 24px;
+        line-height: 29.06px;
+    }
+
+    .feedback > div {
+        padding: 50px 0;
+    }
+
+    .feedback > div > div {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    #mail input {
+        width: 200px;
+    }
+}
